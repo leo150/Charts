@@ -161,6 +161,13 @@
 		06B3C0F91D99F85400B1DF43 /* ChartsRealmTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B3C0F61D99F85400B1DF43 /* ChartsRealmTest.swift */; };
 		5B56A9CD1D905EB300F58178 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B56A9CC1D905EB300F58178 /* Description.swift */; };
 		5BF8813B1DDC4DF70033370C /* IndexAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8813A1DDC4DF70033370C /* IndexAxisValueFormatter.swift */; };
+		B34541871E251FAC00819072 /* StickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34541861E251FAC00819072 /* StickChartView.swift */; };
+		B34541891E25207C00819072 /* StickChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34541881E25207C00819072 /* StickChartRenderer.swift */; };
+		B345418B1E2520BB00819072 /* StickChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345418A1E2520BB00819072 /* StickChartDataProvider.swift */; };
+		B345418F1E25211B00819072 /* StickChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345418C1E25211B00819072 /* StickChartData.swift */; };
+		B34541901E25211B00819072 /* StickChartDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345418D1E25211B00819072 /* StickChartDataEntry.swift */; };
+		B34541911E25211B00819072 /* StickChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345418E1E25211B00819072 /* StickChartDataSet.swift */; };
+		B34541931E25213800819072 /* IStickChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34541921E25213800819072 /* IStickChartDataSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,6 +346,13 @@
 		06B3C0F61D99F85400B1DF43 /* ChartsRealmTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsRealmTest.swift; sourceTree = "<group>"; };
 		5B56A9CC1D905EB300F58178 /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		5BF8813A1DDC4DF70033370C /* IndexAxisValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexAxisValueFormatter.swift; sourceTree = "<group>"; };
+		B34541861E251FAC00819072 /* StickChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickChartView.swift; sourceTree = "<group>"; };
+		B34541881E25207C00819072 /* StickChartRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickChartRenderer.swift; sourceTree = "<group>"; };
+		B345418A1E2520BB00819072 /* StickChartDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickChartDataProvider.swift; sourceTree = "<group>"; };
+		B345418C1E25211B00819072 /* StickChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickChartData.swift; sourceTree = "<group>"; };
+		B345418D1E25211B00819072 /* StickChartDataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickChartDataEntry.swift; sourceTree = "<group>"; };
+		B345418E1E25211B00819072 /* StickChartDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickChartDataSet.swift; sourceTree = "<group>"; };
+		B34541921E25213800819072 /* IStickChartDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStickChartDataSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +476,7 @@
 				06B11FBD1D811B8900D14B02 /* PieRadarChartViewBase.swift */,
 				06B11FBE1D811B8900D14B02 /* RadarChartView.swift */,
 				06B11FBF1D811B8900D14B02 /* ScatterChartView.swift */,
+				B34541861E251FAC00819072 /* StickChartView.swift */,
 			);
 			name = Charts;
 			path = Source/Charts/Charts;
@@ -536,6 +551,9 @@
 				06B11FE81D811B8900D14B02 /* RadarChartDataSet.swift */,
 				06B11FE91D811B8900D14B02 /* ScatterChartData.swift */,
 				06B11FEA1D811B8900D14B02 /* ScatterChartDataSet.swift */,
+				B345418C1E25211B00819072 /* StickChartData.swift */,
+				B345418D1E25211B00819072 /* StickChartDataEntry.swift */,
+				B345418E1E25211B00819072 /* StickChartDataSet.swift */,
 			);
 			path = Standard;
 			sourceTree = "<group>";
@@ -554,6 +572,7 @@
 				06B11FF41D811B8900D14B02 /* IPieChartDataSet.swift */,
 				06B11FF51D811B8900D14B02 /* IRadarChartDataSet.swift */,
 				06B11FF61D811B8900D14B02 /* IScatterChartDataSet.swift */,
+				B34541921E25213800819072 /* IStickChartDataSet.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -611,6 +630,7 @@
 				06B120111D811B8900D14B02 /* CombinedChartDataProvider.swift */,
 				06B120121D811B8900D14B02 /* LineChartDataProvider.swift */,
 				06B120131D811B8900D14B02 /* ScatterChartDataProvider.swift */,
+				B345418A1E2520BB00819072 /* StickChartDataProvider.swift */,
 			);
 			name = Interfaces;
 			path = Source/Charts/Interfaces;
@@ -650,6 +670,7 @@
 				06B1202A1D811B8900D14B02 /* Renderer.swift */,
 				06B1202B1D811B8900D14B02 /* Scatter */,
 				06B120341D811B8900D14B02 /* ScatterChartRenderer.swift */,
+				B34541881E25207C00819072 /* StickChartRenderer.swift */,
 				06B120351D811B8900D14B02 /* XAxisRenderer.swift */,
 				06B120361D811B8900D14B02 /* XAxisRendererHorizontalBarChart.swift */,
 				06B120371D811B8900D14B02 /* XAxisRendererRadarChart.swift */,
@@ -961,6 +982,7 @@
 			files = (
 				06B120AD1D811B8900D14B02 /* LineScatterCandleRadarRenderer.swift in Sources */,
 				06B120C51D811B8900D14B02 /* TransformerHorizontalBarChart.swift in Sources */,
+				B34541891E25207C00819072 /* StickChartRenderer.swift in Sources */,
 				06B1204A1D811B8900D14B02 /* CombinedChartView.swift in Sources */,
 				06B1204C1D811B8900D14B02 /* LineChartView.swift in Sources */,
 				06B120AF1D811B8900D14B02 /* RadarChartRenderer.swift in Sources */,
@@ -999,6 +1021,7 @@
 				06B120751D811B8900D14B02 /* RadarChartDataSet.swift in Sources */,
 				06B120B11D811B8900D14B02 /* ChevronDownShapeRenderer.swift in Sources */,
 				06B120501D811B8900D14B02 /* ScatterChartView.swift in Sources */,
+				B345418F1E25211B00819072 /* StickChartData.swift in Sources */,
 				06B120551D811B8900D14B02 /* Legend.swift in Sources */,
 				06B1205F1D811B8900D14B02 /* BarLineScatterCandleBubbleChartData.swift in Sources */,
 				06B120631D811B8900D14B02 /* BubbleChartDataSet.swift in Sources */,
@@ -1014,6 +1037,7 @@
 				06B120521D811B8900D14B02 /* ChartLimitLine.swift in Sources */,
 				06B120B31D811B8900D14B02 /* CircleShapeRenderer.swift in Sources */,
 				06B1206A1D811B8900D14B02 /* ChartDataSet.swift in Sources */,
+				B34541901E25211B00819072 /* StickChartDataEntry.swift in Sources */,
 				06B120431D811B8900D14B02 /* Animator.swift in Sources */,
 				06B120B01D811B8900D14B02 /* Renderer.swift in Sources */,
 				06B120851D811B8900D14B02 /* DefaultFillFormatter.swift in Sources */,
@@ -1056,6 +1080,7 @@
 				06B120AC1D811B8900D14B02 /* LineRadarRenderer.swift in Sources */,
 				06B120561D811B8900D14B02 /* LegendEntry.swift in Sources */,
 				06B120701D811B8900D14B02 /* PieChartData.swift in Sources */,
+				B345418B1E2520BB00819072 /* StickChartDataProvider.swift in Sources */,
 				06B120C01D811B8900D14B02 /* ChartColorTemplates.swift in Sources */,
 				06B120B61D811B8900D14B02 /* SquareShapeRenderer.swift in Sources */,
 				06B120661D811B8900D14B02 /* CandleChartDataSet.swift in Sources */,
@@ -1071,10 +1096,13 @@
 				06B120831D811B8900D14B02 /* DataApproximator.swift in Sources */,
 				06B1206D1D811B8900D14B02 /* LineChartDataSet.swift in Sources */,
 				06B120451D811B8900D14B02 /* BarChartView.swift in Sources */,
+				B34541911E25211B00819072 /* StickChartDataSet.swift in Sources */,
 				06B120861D811B8900D14B02 /* DefaultValueFormatter.swift in Sources */,
 				06B120A01D811B8900D14B02 /* ViewPortJob.swift in Sources */,
 				06B120C21D811B8900D14B02 /* Fill.swift in Sources */,
 				06B1205C1D811B8900D14B02 /* BarChartData.swift in Sources */,
+				B34541931E25213800819072 /* IStickChartDataSet.swift in Sources */,
+				B34541871E251FAC00819072 /* StickChartView.swift in Sources */,
 				06B120961D811B8900D14B02 /* BubbleChartDataProvider.swift in Sources */,
 				06B120A51D811B8900D14B02 /* BubbleChartRenderer.swift in Sources */,
 				06B120B91D811B8900D14B02 /* ScatterChartRenderer.swift in Sources */,

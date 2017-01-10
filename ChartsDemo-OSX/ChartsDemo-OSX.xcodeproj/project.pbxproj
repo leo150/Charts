@@ -16,6 +16,7 @@
 		65B3F6421C73B4F5000983D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3F6411C73B4F5000983D0 /* AppDelegate.swift */; };
 		65B3F6461C73B4F5000983D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B3F6451C73B4F5000983D0 /* Assets.xcassets */; };
 		65B3F6491C73B4F5000983D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B3F6471C73B4F5000983D0 /* Main.storyboard */; };
+		B34541971E25292C00819072 /* StickDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34541961E25292C00819072 /* StickDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +40,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
-		};
-		0630AE761D812840008859B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0630AE691D812840008859B0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06B120FF1D811F1600D14B02;
-			remoteInfo = ChartsRealmTests;
 		};
 		0630AE8E1D8128A5008859B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -81,6 +75,7 @@
 		65B3F6451C73B4F5000983D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B3F6481C73B4F5000983D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65B3F64A1C73B4F5000983D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34541961E25292C00819072 /* StickDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				0630AE711D812840008859B0 /* Charts.framework */,
-				0630AE731D812840008859B0 /* ChartsTests.xctest */,
 				0630AE751D812840008859B0 /* ChartsRealm.framework */,
-				0630AE771D812840008859B0 /* ChartsRealmTests.xctest */,
+				0630AE731D812840008859B0 /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +107,7 @@
 				5B9A0C3B1C83AB2100ED8ED8 /* LineDemoViewController.swift */,
 				5B9A0C3D1C83AB2B00ED8ED8 /* RadarDemoViewController.swift */,
 				5B9A0C3F1C83AB3400ED8ED8 /* PieDemoViewController.swift */,
+				B34541961E25292C00819072 /* StickDemoViewController.swift */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -230,13 +225,6 @@
 			remoteRef = 0630AE741D812840008859B0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0630AE771D812840008859B0 /* ChartsRealmTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsRealmTests.xctest;
-			remoteRef = 0630AE761D812840008859B0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -256,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34541971E25292C00819072 /* StickDemoViewController.swift in Sources */,
 				65B3F6421C73B4F5000983D0 /* AppDelegate.swift in Sources */,
 				5B9A0C3E1C83AB2B00ED8ED8 /* RadarDemoViewController.swift in Sources */,
 				5B9A0C3A1C83AB1800ED8ED8 /* BarDemoViewController.swift in Sources */,
