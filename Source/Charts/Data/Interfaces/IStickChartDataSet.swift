@@ -20,7 +20,7 @@ public protocol IStickChartDataSet: ILineScatterCandleRadarChartDataSet
 	/// **default**: 0.1 (10%), max 0.45, min 0.0
 	var barSpace: CGFloat { get set }
 	
-	var circleSpace: CGFloat { get set }
+	var circleHoleSpace: CGFloat { get set }
 	
 	/// color of circles on stick ends
 	var circleHoleColor: NSUIColor? { get set }

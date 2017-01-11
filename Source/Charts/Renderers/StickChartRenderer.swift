@@ -104,7 +104,24 @@ open class StickChartRenderer: LineScatterCandleRadarRenderer
 				rect.size.height = _bodyRect.size.width
 				context.fillEllipse(in: rect)
 				
-				
+				if let circleHoleColor = dataSet.circleHoleColor {
+					context.setFillColor(circleHoleColor.cgColor)
+					
+					let size = _bodyRect.size.width * dataSet.circleHoleSpace
+					let offset = (_bodyRect.size.width - size) / 2
+					
+					rect.origin.x = _bodyRect.origin.x + offset
+					rect.origin.y = _bodyRect.origin.y - size / 2
+					rect.size.width = size
+					rect.size.height = size
+					context.fillEllipse(in: rect)
+					
+					rect.origin.x = _bodyRect.origin.x + offset
+					rect.origin.y = _bodyRect.origin.y + _bodyRect.size.height - offset
+					rect.size.width = size
+					rect.size.height = size
+					context.fillEllipse(in: rect)
+				}
 			}
 		}
 		

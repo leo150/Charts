@@ -18,6 +18,8 @@ open class StickDemoViewController: NSViewController
 	{
 		super.viewDidLoad()
 		
+		self.view.layer?.backgroundColor = NSUIColor.lightGray.cgColor
+		
 		let chartData = StickChartData()
 		
 		var yve = [StickChartDataEntry]()
@@ -29,14 +31,19 @@ open class StickDemoViewController: NSViewController
 		}
 		
 		let set1 = StickChartDataSet(values: yve, label: "text")
-		set1.stickColor = NSUIColor.red
-		set1.circleColor = NSUIColor.green
-		
-		chartData.addDataSet(set1)
+		set1.stickColor = NSUIColor(white: 1, alpha: 0.5)
+		set1.circleColor = NSUIColor(white: 1, alpha: 1)
+		set1.circleHoleColor = NSUIColor(red: 0.941, green: 0.973, blue: 1, alpha: 1)
 		
 		stickChartView.data = chartData
-		stickChartView.gridBackgroundColor = NSUIColor.white
 		stickChartView.chartDescription?.text = "Chart Description"
+//		stickChartView.drawGridBackgroundEnabled = true
+//		stickChartView.xAxis.gridColor = NSUIColor.white
+		
+		stickChartView.xAxis.granularityEnabled = true
+		stickChartView.xAxis.granularity = 5
+
+		chartData.addDataSet(set1)
 		
 		let paragraphStyle: NSMutableParagraphStyle = NSParagraphStyle.default().mutableCopy() as! NSMutableParagraphStyle
 		paragraphStyle.lineBreakMode = .byTruncatingTail

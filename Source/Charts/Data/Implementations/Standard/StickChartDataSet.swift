@@ -75,7 +75,7 @@ open class StickChartDataSet: LineScatterCandleRadarChartDataSet, IStickChartDat
 	
 	///
 	/// **default**: 0.5
-	open var circleSpace: CGFloat = CGFloat(1.5)
+	open var circleHoleSpace: CGFloat = CGFloat(0.5)
 	
 	/// color of circles on stick ends
 	open var circleHoleColor: NSUIColor?
